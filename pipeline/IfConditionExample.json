@@ -31,7 +31,13 @@
 							"policy": {
 								"secureInput": false
 							},
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "WaitAndFail",
+									"type": "PipelineReference"
+								}
+							}
 						}
 					]
 				}
