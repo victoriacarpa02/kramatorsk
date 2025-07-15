@@ -15,22 +15,20 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "BinarySource"
-					},
-					"sink": {
-						"type": "BinarySink"
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "SourceDataset",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "SinkDataset",
 						"type": "DatasetReference"
 					}
 				]
