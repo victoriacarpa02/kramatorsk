@@ -1,15 +1,19 @@
 {
-    "name": "SourceDataset",
-    "properties": {
-      "linkedServiceName": { "referenceName": "AzureBlobStorage1", "type": "LinkedServiceReference" },
-      "type": "Binary",
-      "typeProperties": {
-        "location": {
-          "type": "AzureBlobStorageLocation",
-          "folderPath": "source-folder",
-          "fileName": "input.csv"
-        }
-      }
-    }
-  }
-  
+	"name": "SourceDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "input.csv",
+				"folderPath": "source-folder",
+				"container": "default"
+			}
+		}
+	}
+}
