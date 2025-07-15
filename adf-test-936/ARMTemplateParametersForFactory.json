@@ -9,7 +9,7 @@
 			"value": ""
 		},
 		"AzureSqlDatabase1_connectionString": {
-			"value": ""
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=;Initial Catalog="
 		}
 	}
 }
