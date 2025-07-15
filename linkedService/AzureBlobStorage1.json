@@ -1,13 +1,11 @@
 {
-    "name": "AzureBlobStorage1",
-    "properties": {
-      "type": "AzureBlobStorage",
-      "typeProperties": {
-        "connectionString": {
-          "type": "SecureString",
-          "value": "DefaultEndpointsProtocol=https;AccountName=youraccount;AccountKey=yourkey;"
-        }
-      }
-    }
-  }
-  
+	"name": "AzureBlobStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": ""
+		}
+	}
+}

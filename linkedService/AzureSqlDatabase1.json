@@ -1,13 +1,11 @@
 {
-    "name": "AzureSqlDatabase1",
-    "properties": {
-      "type": "AzureSqlDatabase",
-      "typeProperties": {
-        "connectionString": {
-          "type": "SecureString",
-          "value": "Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=yourdb;User ID=youruser;Password=yourpassword;"
-        }
-      }
-    }
-  }
-  
+	"name": "AzureSqlDatabase1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": ""
+		}
+	}
+}
