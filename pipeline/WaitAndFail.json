@@ -1,0 +1,21 @@
+{
+    "name": "WaitAndFail",
+    "properties": {
+      "activities": [
+        {
+          "name": "Wait5Sec",
+          "type": "Wait",
+          "typeProperties": { "waitTimeInSeconds": 5 }
+        },
+        {
+          "name": "FailIt",
+          "type": "Fail",
+          "dependsOn": [{ "activity": "Wait5Sec", "dependencyConditions": ["Succeeded"] }],
+          "typeProperties": {
+            "message": "Intentional fail for testing pipeline failures"
+          }
+        }
+      ]
+    }
+  }
+  

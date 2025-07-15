@@ -1,0 +1,13 @@
+{
+    "name": "AzureSqlDatabase1",
+    "properties": {
+      "type": "AzureSqlDatabase",
+      "typeProperties": {
+        "connectionString": {
+          "type": "SecureString",
+          "value": "Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=yourdb;User ID=youruser;Password=yourpassword;"
+        }
+      }
+    }
+  }
+  

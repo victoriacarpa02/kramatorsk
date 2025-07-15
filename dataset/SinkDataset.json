@@ -1,0 +1,15 @@
+{
+    "name": "SinkDataset",
+    "properties": {
+      "linkedServiceName": { "referenceName": "AzureBlobStorage1", "type": "LinkedServiceReference" },
+      "type": "Binary",
+      "typeProperties": {
+        "location": {
+          "type": "AzureBlobStorageLocation",
+          "folderPath": "sink-folder",
+          "fileName": "output.csv"
+        }
+      }
+    }
+  }
+  

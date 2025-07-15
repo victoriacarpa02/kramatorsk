@@ -1,0 +1,34 @@
+{
+    "name": "IfConditionExample",
+    "properties": {
+      "variables": {
+        "flag": { "type": "Boolean", "defaultValue": true }
+      },
+      "activities": [
+        {
+          "name": "CheckFlag",
+          "type": "IfCondition",
+          "typeProperties": {
+            "expression": { "value": "@variables('flag')", "type": "Expression" },
+            "ifTrueActivities": [
+              {
+                "name": "TrueBranch",
+                "type": "ExecutePipeline",
+                "typeProperties": {
+                  "pipeline": { "referenceName": "CopyBlobToBlob", "type": "PipelineReference" }
+                }
+              }
+            ],
+            "ifFalseActivities": [
+              {
+                "name": "FalseBranch",
+                "type": "Wait",
+                "typeProperties": { "waitTimeInSeconds": 2 }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  

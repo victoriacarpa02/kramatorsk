@@ -1,0 +1,15 @@
+{
+    "name": "SourceDataset",
+    "properties": {
+      "linkedServiceName": { "referenceName": "AzureBlobStorage1", "type": "LinkedServiceReference" },
+      "type": "Binary",
+      "typeProperties": {
+        "location": {
+          "type": "AzureBlobStorageLocation",
+          "folderPath": "source-folder",
+          "fileName": "input.csv"
+        }
+      }
+    }
+  }
+  

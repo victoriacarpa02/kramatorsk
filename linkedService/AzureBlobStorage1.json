@@ -1,0 +1,13 @@
+{
+    "name": "AzureBlobStorage1",
+    "properties": {
+      "type": "AzureBlobStorage",
+      "typeProperties": {
+        "connectionString": {
+          "type": "SecureString",
+          "value": "DefaultEndpointsProtocol=https;AccountName=youraccount;AccountKey=yourkey;"
+        }
+      }
+    }
+  }
+  
