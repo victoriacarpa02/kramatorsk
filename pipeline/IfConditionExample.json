@@ -31,13 +31,7 @@
 							"policy": {
 								"secureInput": false
 							},
-							"userProperties": [],
-							"typeProperties": {
-								"pipeline": {
-									"referenceName": "CopyBlobToBlob",
-									"type": "PipelineReference"
-								}
-							}
+							"userProperties": []
 						}
 					]
 				}
