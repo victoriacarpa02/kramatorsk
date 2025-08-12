@@ -1,0 +1,9 @@
+{
+	"name": "my-adf-custom",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cf08f352-5d3f-43ca-9204-74247f9deb4b",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}
