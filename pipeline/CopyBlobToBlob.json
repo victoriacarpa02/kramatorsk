@@ -51,6 +51,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "a>2",
+						"type": "Expression"
+					},
 					"ifFalseActivities": [
 						{
 							"name": "Execute Pipeline1",
@@ -80,9 +84,13 @@
 							"userProperties": [],
 							"typeProperties": {
 								"source": {
-									"type": "SnowflakeV2Source",
-									"exportSettings": {
-										"type": "SnowflakeExportCopyCommand"
+									"type": "BinarySource",
+									"storeSettings": {
+										"type": "AzureBlobStorageReadSettings",
+										"recursive": true
+									},
+									"formatSettings": {
+										"type": "BinaryReadSettings"
 									}
 								},
 								"sink": {
@@ -95,7 +103,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SnowflakeTable1",
+									"referenceName": "SourceDataset",
 									"type": "DatasetReference"
 								}
 							],
