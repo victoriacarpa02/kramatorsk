@@ -1,0 +1,32 @@
+{
+	"name": "Snowflake_query_v3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SnowflakeV3",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"sf_warehouse": {
+					"value": "@dataset().sf_database",
+					"type": "Expression"
+				},
+				"sf_database": {
+					"value": "@dataset().sf_warehouse",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"sf_database": {
+				"type": "string",
+				"defaultValue": "default"
+			},
+			"sf_warehouse": {
+				"type": "string",
+				"defaultValue": "default"
+			}
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": []
+	}
+}
