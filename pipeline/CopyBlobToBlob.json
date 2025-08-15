@@ -65,6 +65,10 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"pipeline": {
+									"referenceName": "WaitAndFail",
+									"type": "PipelineReference"
+								},
 								"waitOnCompletion": true
 							}
 						}
